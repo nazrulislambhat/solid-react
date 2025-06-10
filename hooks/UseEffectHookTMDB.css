@@ -1,0 +1,98 @@
+.grid {
+  display: grid;
+  gap: 2rem;
+  padding: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-items: center;
+  background-color: darkturquoise;
+  align-items: start;
+}
+
+.skeleton-card {
+  animation: pulse 1.5s infinite ease-in-out;
+  background: #f0f0f0;
+}
+
+.skeleton-image,
+.skeleton-title,
+.skeleton-text,
+.skeleton-release {
+  background-color: #ddd;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+.skeleton-image {
+  width: 100%;
+  height: 360px;
+}
+
+.skeleton-title {
+  width: 60%;
+  height: 20px;
+}
+
+.skeleton-text {
+  width: 100%;
+  height: 40px;
+}
+
+.skeleton-release {
+  width: 40%;
+  height: 16px;
+}
+@keyframes pulse {
+  0% {
+    background-color: #eee;
+  }
+  50% {
+    background-color: #e0e0e0;
+  }
+  100% {
+    background-color: #eee;
+  }
+}
+.card {
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  color: #fff;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin: 0.75rem 0 0.5rem;
+  color: #333;
+}
+
+.card-overview {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+  height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-release {
+  font-size: 0.85rem;
+  color: #888;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
