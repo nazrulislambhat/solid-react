@@ -1,0 +1,11 @@
+input {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+input:focus {
+  outline: 2px solid red;
+}
+input:focus-within {
+  border: 2px solid red;
+}
