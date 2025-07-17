@@ -9,3 +9,18 @@ input:focus {
 input:focus-within {
   border: 2px solid red;
 }
+button {
+  background: none;
+  border: none;
+  border: 1px solid grey;
+  border-radius: 20px;
+  padding: 0.5rem 1.8rem;
+  color: inherit;
+  cursor: pointer;
+}
+h2 {
+  color: blue;
+}
+h5 {
+  color: orangered;
+}
